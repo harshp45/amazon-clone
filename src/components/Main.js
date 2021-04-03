@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+// import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+// import { Carousel } from 'react-responsive-carousel';
 import "../css/Main.css";
 import Product from "./Product";
 import Category from "./Category";
 import "../css/Product.css";
 import { Link } from "react-router-dom";
+
+//Images
+import image1 from "../images/image1.jpg";
+import image2 from "../images/image2.jpg";
+import image3 from "../images/image3.jpg";
+import image4 from "../images/image4.jpg";
 
 function Main() 
 {
@@ -23,11 +29,32 @@ function Main()
 
   return (
     <div className="main-div">
-      <div className="container">
-      <img className="m-image"
+      <div className="container-app">
+      <div id="carousel" className="carousel slide" data-bs-ride="carousel">
+            <div className="carousel-inner">
+                <div className="carousel-item active" data-bs-interval="15000">
+                  <img src={image1} className="m-image" alt="" />
+                </div>
+                <div className="carousel-item" data-bs-interval="7000">
+                  <img src={image2} class="m-image" alt="" />
+                </div>
+                <div className="carousel-item">
+                  <img src={image3} class="m-image" alt="" />
+                </div>
+            </div>
+            <button className="carousel-control-prev" type="button" data-bs-target="#carousel"  data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Previous</span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target="#carousel"  data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Next</span>
+            </button>
+        </div>
+      {/* <img className="m-image"
                     src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
                     alt=""
-                />
+                /> */}
         {/* <Carousel>
               <div>
                 <img className="m-image"

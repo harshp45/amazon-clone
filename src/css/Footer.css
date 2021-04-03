@@ -19,6 +19,7 @@
   
   .f-span-top {
     color: white !important;
+    font-size: 16px;
   }
   
   .f-span-bottom {
@@ -72,12 +73,12 @@
   .back-top{
       color: white !important;
       align-items: center;
-      margin: -10px;
+      margin: 1px;
   }
 
   .back-top > a{
      align-items: center;
-      color: white !important;
+    color: white !important;
   }
 
   .nav-line{

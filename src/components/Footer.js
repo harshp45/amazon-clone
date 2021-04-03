@@ -20,7 +20,7 @@ function Footer() {
     return (
       <div className="f-main-div">
           <div className="back-top" onClick={scrollToTop}>
-              <Link><h3>Back to top</h3></Link>
+              <Link><h4>Back to top</h4></Link>
           </div>
 
           <div className="nav-line">&nbsp;</div>
@@ -28,7 +28,7 @@ function Footer() {
           <div className="f-center-bar">
             <div className="f-navbar-div">
                 <div className="f-nav-content">
-                    <h3>Get Know Us</h3>
+                    <h4>Get Know Us</h4>
                     <a href="https://www.amazon.jobs/en-gb/"><span className="f-span-top">Careers</span></a>
                     <a href="https://www.amazon.ca/gp/help/customer/display.html?nodeId=200700220&ref_=footer_corpres"><span className="f-span-bottom">Amazon and Our Planet</span></a>
                     <a href="https://ir.aboutamazon.com/overview/default.aspx"><span className="f-span-bottom">Investors Relations</span></a>
@@ -37,7 +37,7 @@ function Footer() {
             </div>
             <div className="f-navbar-div">
                 <div className="f-nav-content">
-                <h3>Make Money with Us</h3>
+                <h4>Make Money with Us</h4>
                 <a href="https://sell.amazon.ca/?ld=AZFSSOA-CA-footer&ref_=footer_soa"><span className="f-span-top">Sell on Amazon</span></a>
                 <a href="https://www.amazon.ca/b/?node=18602888011&ref_=map_1_b2b_GW_FT"><span className="f-span-bottom">Sell Under Amazon Accelerator</span></a>
                 <a href="https://associates.amazon.ca/"><span className="f-span-bottom">Amazon Associates</span></a>
@@ -49,7 +49,7 @@ function Footer() {
             </div>
             <div className="f-navbar-div">
                 <div className="f-nav-content">
-                <h3>Amazon Payment Products</h3>
+                <h4>Amazon Payment Products</h4>
                 <a href="https://www.amazon.ca/dp/B07MJM4F44?plattr=CACBCCFOOT&ref_=nav_cbcc_ca_footer"><span className="f-span-top">Amazon.ca Rewards Mastercard</span></a>
                 <a href="https://www.amazon.ca/gp/browse.html?node=21371066011&ref_=footer_swp"><span className="f-span-bottom">Shop with Points</span></a>
                 <a href="https://www.amazon.ca/gp/product/B08F4ZZ8NV?"><span className="f-span-bottom">Reload Your Balance</span></a>
@@ -60,7 +60,7 @@ function Footer() {
             </div>
             <div className="f-navbar-div">
                 <div className="f-nav-content">
-                <h3>Let Us Help You</h3>
+                <h4>Let Us Help You</h4>
                 <a href="https://www.amazon.ca/gp/help/customer/display.html?nodeId=GDFU3JS5AL6SYHRD&ref_=footer_covid"><span className="f-span-top">COVID-19 and Amazon</span></a>
                 <a href="https://www.amazon.ca/gp/help/customer/display.html?nodeId=915470&ref_=footer_shiprates"><span className="f-span-bottom">Shipping Rates & Policies</span></a>
                 <a href="https://www.amazon.ca/amazonprime?_encoding=UTF8&ref_=footer_prime"><span className="f-span-bottom">Amazon Prime</span></a>
