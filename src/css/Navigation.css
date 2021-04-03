@@ -1,0 +1,47 @@
+.u-main-div {
+    display: flex;
+    top: 0;
+    z-index: 100;
+    background-color: #232f3e;
+    align-items: center;
+  }
+
+  .u-navbar-div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .u-nav-content {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: column;
+    color: white;
+  }
+
+  .u-span-top {
+    font-size: 11px;
+  }
+  
+  .u-span-bottom {
+    font-weight: 800;
+    font-size: 12px;
+  }
+  
+  .u-newdeals {
+    display: flex;
+    font-weight: 900;
+    font-size: 18px;
+    margin-left: 350px;
+    margin-right: 10px;
+    flex-direction: column;
+    color: white;
+  }
+
+  .nav-icon{
+    color: white !important;
+  }
+
+  a{
+      text-decoration: none !important;
+  }

@@ -1,0 +1,73 @@
+.h-main-div {
+    display: flex;
+    top: 0; 
+    z-index: 100;
+    height: 60px;
+    background-color: #131921;
+    align-items: center;
+  }
+
+  .amazon-logo {
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 18px;
+    width: 100px;
+  }
+  
+
+  
+  .h-search-div {
+    display: flex;
+    border-radius: 24px;
+    align-items: center;
+    flex: 1;
+    
+  }
+  
+  .h-search-bar {
+    width: 100%;
+    height: 12px;
+    border: none;
+    padding: 10px;
+  }
+  
+  .h-search-icon {
+    background-color: #cd9042;
+    padding: 5px;
+    height: 22px !important;
+  }
+  
+  .h-span-top {
+    font-size: 10px;
+  }
+  
+  .h-span-bottom {
+    font-weight: 800;
+    font-size: 13px;
+  }
+  
+  .h-cart-div {
+    display: flex;
+    color: white;
+    align-items: center;
+  }
+  
+  .h-cart-count {
+    color: orange;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .h-navbar-div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .h-nav-content {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: column;
+    color: white;
+  }
+  

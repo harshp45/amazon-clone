@@ -1,0 +1,100 @@
+.f-main-div {
+    display: flex;
+    flex-direction: column; 
+    height: 800px;
+    color: #0F1111;
+    background-color: #232F3E;
+    align-items: center;
+  }
+
+  .a-logo{
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 18px;
+    margin-right: 200px;
+    width: 100px;
+  }
+
+ 
+  
+  .f-span-top {
+    color: white !important;
+  }
+  
+  .f-span-bottom {
+      color: white !important;
+  }
+  
+
+  
+  .f-navbar-div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .f-copyright-div{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .f-copyright-content{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: row;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .f-nav-content {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: column;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .f-nav-content > a{
+      padding-top: 10px;
+  }
+
+  .f-center-bar{
+      display: flex;
+      flex-direction: row;
+      
+  }
+
+  .back-top{
+      color: white !important;
+      align-items: center;
+      margin: -10px;
+  }
+
+  .back-top > a{
+     align-items: center;
+      color: white !important;
+  }
+
+  .nav-line{
+      height: 5px;
+      width: 100%;
+      border-top: 1px solid #3a4553 !important ;
+      margin-top: 10px;
+  }
+
+  .spanBottom{
+    font-size: 10px;
+  }
+
+  .spanTop{
+    padding-top: 50px;
+    font-weight: 800;
+    font-size: 13px;
+    padding-right: 30px;
+  }
+  

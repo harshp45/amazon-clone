@@ -1,0 +1,78 @@
+{
+    "products": [
+        { 
+            "id": 1, 
+            "title": "Unfinished: A Memoir by Priyanka Chopra", 
+            "image":"https://images-na.ssl-images-amazon.com/images/I/81W1swVa19L.jpg",
+            "price":16.80,
+            "rating":4,
+            "category":"Bookshelf and Readings",
+            "popularity":"BestSeller"
+        },
+        {
+            "id": 2, 
+            "title": "Philips S9041/12 9000 Series Wet and Dry Shaver with SmartClick Precision Trimmer", 
+            "image":"https://images-na.ssl-images-amazon.com/images/I/81xurOYks0L._AC_SX425_.jpg",
+            "price":250.19,
+            "rating":4,
+            "category":"Electronics",
+            "popularity":"Normal"
+        },
+        {
+            "id": 3, 
+            "title": "PURA D'OR Hair Thinning Therapy Shampoo & Conditioner 2-Piece System for Prevention, Men & Women (Packaging may vary)", 
+            "image":"https://images-na.ssl-images-amazon.com/images/I/91JsdNThJ2L._AC_SX466_.jpg",
+            "price":96.02,
+            "rating":4,
+            "category":"Cosmetics",
+            "popularity":"BestSeller"
+            
+        },
+        {
+            "id": 4, 
+            "title": "PlayStation 5 Console - PlayStation 5 Edition", 
+            "image":"https://images-na.ssl-images-amazon.com/images/I/619BkvKW35L._AC_SL1500_.jpg",
+            "price":629.99,
+            "rating":5,
+            "category":"Electronics",
+            "popularity":"BestSeller"
+        },
+        {
+            "id": 5, 
+            "title": "New Apple AirPods Max - Space Grey", 
+            "image":"https://images-na.ssl-images-amazon.com/images/I/81jqUPkIVRL._AC_SL1500_.jpg",
+            "price":779.99,
+            "rating":5,
+            "category":"Electronics",
+            "popularity":"Normal"
+        },
+        {
+            "id": 6, 
+            "title": "Multivitamin Gummies For Adults - Orange Flavour, Non-GMO, Gluten-Free", 
+            "image":"https://images-na.ssl-images-amazon.com/images/I/613Myh8hxaL._AC_SY450_.jpg",
+            "price":14.39,
+            "rating":4,
+            "category":"Medicine and Drugs",
+            "popularity":"BestSeller"
+        },
+        {
+            "id": 7, 
+            "title": "Celestron 21061 AstroMaster 70AZ Refractor Telescope", 
+            "image":"https://images-na.ssl-images-amazon.com/images/I/51A2C8kPkPL._AC_SY355_.jpg",
+            "price":243.14,
+            "rating":4,
+            "category":"Camera and Lens",
+            "popularity":"Normal"
+        },
+        {
+            "id": 8, 
+            "title": "Nikon D7500 20.9MP DSLR Camera with AF-S DX NIKKOR 16-80mm f/2.8-4E ED VR Lens, Black (US VERSION)", 
+            "image":"https://images-na.ssl-images-amazon.com/images/I/81kzldM7%2BJL._AC_SL1500_.jpg",
+            "price":2054.98,
+            "rating":5,
+            "category":"Camera and Lens",
+            "popularity":"Normal"
+        }
+    ]
+}
+
