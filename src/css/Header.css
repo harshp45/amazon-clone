@@ -26,15 +26,14 @@
   
   .h-search-bar {
     width: 100%;
-    height: 12px;
+    height: 34px;
     border: none;
     padding: 10px;
   }
   
   .h-search-icon {
     background-color: #cd9042;
-    padding: 5px;
-    height: 22px !important;
+    height: 34px !important;
   }
   
   .h-span-top {

@@ -19,23 +19,23 @@ function Register() {
             </Link>
 
             <div className='r-container'>
-                <h1>Create Account</h1>
+                <h3>Create account</h3>
 
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <h5>Your Name</h5>
-                    <input type='text' placeholder="Your Name" {...register("Name", { required: true})} />
+                    <h6>Your Name</h6>
+                    <input type='text'  {...register("Name", { required: true})} />
                     <div className="error">{errors.Name && "Name is required"}</div>
                     
-                    <h5>E-mail</h5>
-                    <input type='text' placeholder="Email" {...register("Email", { required: true, pattern: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/ })} />
+                    <h6>Email</h6>
+                    <input type='text'  {...register("Email", { required: true, pattern: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/ })} />
                     <div className="error">{errors.Email && "Enter a valid email address"}</div>
 
-                    <h5>Password</h5>
+                    <h6>Password</h6>
                     <input type='password' placeholder="At Least 6 Characters" {...register("Password", { required: true, pattern: /^(?=.*[a-zA-Z])(?=\w*[0-9])\w{6,12}$/ })}/>
                     <div className="error">{errors.Password && "Enter a valid password"}</div>
 
-                    <h5>Password Again</h5>
-                    <input type='password' placeholder="" {...register("PassAgain", { required: true, pattern: /^(?=.*[a-zA-Z])(?=\w*[0-9])\w{6,12}$/ })}/>
+                    <h6>Password again</h6>
+                    <input type='password' {...register("PassAgain", { required: true, pattern: /^(?=.*[a-zA-Z])(?=\w*[0-9])\w{6,12}$/ })}/>
                     <div className="error">{errors.PassAgain && "Enter Password Again"}</div>
 
                     <button type='submit' className='CreateAccount-btn'>Create Your Amazon Account</button>

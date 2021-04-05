@@ -66,23 +66,22 @@
 
   .f-center-bar{
       display: flex;
-      flex-direction: row;
-      
+      flex-direction: row; 
   }
 
   .back-top{
       color: white !important;
       align-items: center;
-      margin: 1px;
+      margin: 2px;
   }
 
   .back-top > a{
-     align-items: center;
+    align-items: center;
     color: white !important;
   }
 
   .nav-line{
-      height: 5px;
+      height: 8px;
       width: 100%;
       border-top: 1px solid #3a4553 !important ;
       margin-top: 10px;
