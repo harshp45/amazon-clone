@@ -61,7 +61,7 @@ function Navigation() {
                 </div>
             </Link>
             <div className="u-newdeals">
-                <span><b>New deals everyday</b></span>
+                <span className="new-deals">New deals everyday</span>
             </div>
         </div>
       </div>
