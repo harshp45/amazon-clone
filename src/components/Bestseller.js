@@ -11,7 +11,7 @@ const [products, setProducts] = useState([]);
 
 
   useEffect(() => {
-        fetch('http://localhost:3000/products',{
+        fetch('https://amazon-fakedb.herokuapp.com/products',{
         headers: {'Content-Type': 'application/json'}
         })
         .then(response =>  response.json())

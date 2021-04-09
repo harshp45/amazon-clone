@@ -5,11 +5,9 @@ import Navigation from "../components/Navigation";
 import Login from "../components/Login";
 import Register from "../components/Register";
 import Main from "../components/Main";
+import ProductDesc from "../components/ProductDesc";
 import Bestseller from "../components/Bestseller";
-import Books from "../components/Product Category/Books";
-import Camera from "../components/Product Category/Camera";
-import Drugs from "../components/Product Category/Drugs";
-import Electronics from "../components/Product Category/Electronics";
+import ProductCategory from "../components/ProductCategory";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -29,28 +27,16 @@ function App() {
               <Bestseller />
               <Footer/>
           </Route>
-          <Route path="/books">
+          <Route path="/productdesc">
               <Header />
               <Navigation/>
-              <Books />
+              <ProductDesc />
               <Footer/>
           </Route>
-          <Route path="/drugs">
+          <Route path="/productCategory">
               <Header />
               <Navigation/>
-              <Drugs />
-              <Footer/>
-          </Route>
-          <Route path="/camera">
-              <Header />
-              <Navigation/>
-              <Camera />
-              <Footer/>
-          </Route>
-          <Route path="/electronics">
-              <Header />
-              <Navigation/>
-              <Electronics />
+              <ProductCategory />
               <Footer/>
           </Route>
           <Route path="/">

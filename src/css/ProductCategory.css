@@ -1,11 +1,19 @@
-.elec-row {
+.pc-row {
     display: flex;
+    flex-direction: column;
     z-index: 1;
     margin-left: 5px;
     margin-right: 5px;
   }
+
+  .pc-row > a{
+    text-decoration: none !important;
+    color: black !important;
+  }
   
-  .elec-image {
+
+  
+  .pc-image {
     width: 100%;
     z-index: -1;
     margin-bottom: -150px;

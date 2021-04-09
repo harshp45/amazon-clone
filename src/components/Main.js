@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 // import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 // import { Carousel } from 'react-responsive-carousel';
 import "../css/Main.css";
-import Product from "./Product";
 import Category from "./Category";
-import "../css/Product.css";
 import { Link } from "react-router-dom";
 
 //Images
@@ -20,7 +18,7 @@ function Main()
 
   useEffect(() => {
 
-    fetch('http://localhost:3000/products',{
+    fetch('https://amazon-fakedb.herokuapp.com/products',{
       headers: {'Content-Type': 'application/json'}
     })
     .then(response =>  response.json())
@@ -55,23 +53,23 @@ function Main()
             </button>
         </div>
         <div className="m-row">
-              <Link to="/books" >
+              <Link to={{pathname:"productCategory", state:{test: 'Bookshelf and Readings'}}}>
               <Category
                 title="Bookshelf and Readings"
                 image="https://images-na.ssl-images-amazon.com/images/I/81W1swVa19L.jpg"/>
               </Link>
-              <Link to="camera">
+              <Link to={{pathname:"productCategory", state:{test: 'Camera and Lens'}}}>
               <Category
                 title="Camera and Lens"
                 image="https://images-na.ssl-images-amazon.com/images/I/81kzldM7%2BJL._AC_SL1500_.jpg"/>
               </Link>
 
-              <Link to="drugs">
+              <Link to={{pathname:"productCategory", state:{test: 'Medicine and Drugs'}}}>
               <Category
                 title="Medicine and Drugs"
                 image="https://images-na.ssl-images-amazon.com/images/I/613Myh8hxaL._AC_SY450_.jpg"/>
               </Link>
-              <Link to="electronics">
+              <Link to={{pathname:"productCategory", state:{test: 'Electronics'}}}>
               <Category
                 title="Electronics"
                 image="https://images-na.ssl-images-amazon.com/images/I/81xurOYks0L._AC_SX425_.jpg"/>

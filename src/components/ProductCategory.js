@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from "react";
-import Product from "../Product";
-import "./css/Electronics.css";
+import Product from "./Product";
+import "../css/ProductCategory.css";
+import { useLocation, Link} from "react-router-dom";
 
-function Electronics() {
+function ProductCategory() {
 
 const [products, setProducts] = useState([]);
+let location = useLocation();
 
 
 
   useEffect(() => {
-        fetch('http://localhost:3000/products',{
+        fetch('https://amazon-fakedb.herokuapp.com/products',{
         headers: {'Content-Type': 'application/json'}
         })
         .then(response =>  response.json())
@@ -19,10 +21,11 @@ const [products, setProducts] = useState([]);
 
 
   return (
-    <div className="elec-row">
+    <div className="pc-row">
         <div className="container">
-        {products.filter(item => item.category==='Electronics').map(item => (
-                <div className="elec-row"> 
+        {products.filter(item => item.category===location.state.test).map(item => (
+                <div className="pc-row"> 
+                <Link to={{pathname:'/productdesc', state:{test: item.id}}}>
                     <Product
                         key={item.id}
                         id={item.id}
@@ -31,11 +34,13 @@ const [products, setProducts] = useState([]);
                         rating={item.rating}
                         image={item.image}
                     /> 
+                  </Link>
                 </div>  
+                
         ))}
          </div>
     </div>   
   )
 }
 
-export default Electronics;
+export default ProductCategory;
