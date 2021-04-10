@@ -1,4 +1,4 @@
-.b-row {
+.pro-row {
     display: flex;
     flex-direction: column;
     z-index: 1;
@@ -6,11 +6,10 @@
     margin-right: 5px;
   }
 
-  .b-row > a{
+  .pro-row > a {
     text-decoration: none !important;
     color: black !important;
   }
   
-
 
   

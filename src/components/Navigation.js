@@ -15,6 +15,11 @@ function Navigation() {
             </div>
             
             <div className="u-navbar-div">
+            <Link to="/products">
+                <div className="u-nav-content">
+                    <span>Products</span>
+                </div>
+            </Link>
             <Link to="/bestsellers">
                 <div className="u-nav-content">
                     <span>Best Sellers</span>

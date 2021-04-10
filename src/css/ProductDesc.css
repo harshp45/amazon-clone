@@ -28,6 +28,21 @@
   color:#B12704 !important;
 }
 
+.select-quantity{
+  display: flex;
+  flex-direction: row;
+}
+
+.in-stock > h5{
+  color: green !important;
+}
+
+.select-quantity > select{
+  margin: 0px;
+  margin-left: 15px;
+  width: 5%;
+}
+
   .pd-content > button {
     bottom: 0px;
     position: absolute;

@@ -7,6 +7,7 @@ import Register from "../components/Register";
 import Main from "../components/Main";
 import ProductDesc from "../components/ProductDesc";
 import Bestseller from "../components/Bestseller";
+import AllProducts from "../components/AllProducts";
 import ProductCategory from "../components/ProductCategory";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -25,6 +26,12 @@ function App() {
               <Header />
               <Navigation/>
               <Bestseller />
+              <Footer/>
+          </Route>
+          <Route path="/products">
+              <Header />
+              <Navigation/>
+              <AllProducts />
               <Footer/>
           </Route>
           <Route path="/productdesc">

@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Product from "./Product";
-import "../css/ProductCategory.css";
-import { useLocation, Link} from "react-router-dom";
+import "../css/AllProducts.css";
 
-function ProductCategory() {
+function AllProducts() {
 
 const [products, setProducts] = useState([]);
-let location = useLocation();
 
 
 
@@ -21,10 +20,10 @@ let location = useLocation();
 
 
   return (
-    <div className="pc-row">
+    <div className="pro-row">
         <div className="container">
-        {products.filter(item => item.category===location.state.test).map(item => (
-                <div className="pc-row"> 
+        {products.map(item => (
+                <div className="pro-row"> 
                 <Link to={{pathname:'/productdesc', state:{test: item.id}}}>
                     <Product
                         key={item.id}
@@ -34,14 +33,13 @@ let location = useLocation();
                         popularity={item.popularity}
                         rating={item.rating}
                         image={item.image}
-                    /> 
-                  </Link>
+                    />
+                  </Link> 
                 </div>  
-                
         ))}
          </div>
     </div>   
   )
 }
 
-export default ProductCategory;
+export default AllProducts;

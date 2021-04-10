@@ -30,6 +30,7 @@ const [products, setProducts] = useState([]);
                         id={item.id}
                         title={item.title}
                         price={item.price}
+                        popularity={item.popularity}
                         rating={item.rating}
                         image={item.image}
                     />
