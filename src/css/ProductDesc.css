@@ -23,8 +23,12 @@
     text-align: left;
 }
 
+.pd-content > span > b{
+  color:#B12704 !important;
+}
 
   .pd-content > button {
+
     display: flex;
     background: #f0c14b;
     width: 100px;

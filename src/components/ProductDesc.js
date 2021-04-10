@@ -27,7 +27,9 @@ function ProductDesc(props) {
         
         <div className="pd-content">
             <h4>{products.title}</h4>
-            <span>Price: CDN$ {products.price}</span>
+            <span>{products.description}</span><br/>
+            <span>Price: <b>CDN$ {products.price}</b></span>
+            
             <button>Add to Cart</button>
             
         </div>

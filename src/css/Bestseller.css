@@ -1,8 +1,14 @@
 .b-row {
     display: flex;
+    flex-direction: column;
     z-index: 1;
     margin-left: 5px;
     margin-right: 5px;
+  }
+
+  .b-row > a{
+    text-decoration: none !important;
+    color: black !important;
   }
   
   .b-image {

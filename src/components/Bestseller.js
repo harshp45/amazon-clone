@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from 'axios'
-import ReactPaginate from 'react-paginate';
+import { Link } from "react-router-dom";
 import Product from "./Product";
 import "../css/Bestseller.css";
 
@@ -25,6 +24,7 @@ const [products, setProducts] = useState([]);
         <div className="container">
         {products.filter(item => item.popularity==='BestSeller').map(item => (
                 <div className="b-row"> 
+                <Link to={{pathname:'/productdesc', state:{test: item.id}}}>
                     <Product
                         key={item.id}
                         id={item.id}
@@ -32,7 +32,8 @@ const [products, setProducts] = useState([]);
                         price={item.price}
                         rating={item.rating}
                         image={item.image}
-                    /> 
+                    />
+                  </Link> 
                 </div>  
         ))}
          </div>

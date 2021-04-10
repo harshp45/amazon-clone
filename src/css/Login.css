@@ -65,5 +65,9 @@
     margin-top: 10px;
     border-color: darkgray;
   }
+
+  .error{
+    color: red !important;
+  }
   
   
