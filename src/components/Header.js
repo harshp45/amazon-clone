@@ -17,8 +17,8 @@ function Header() {
         </Link>
   
         <div className="h-search-div">
-          <input className="h-search-bar" type="text"/>
-          <SearchIcon className="h-search-icon" />
+          <input className="h-search-bar" type="text" id="search-products"/>
+          <SearchIcon className="h-search-icon"  />
         </div>
 
         <div>

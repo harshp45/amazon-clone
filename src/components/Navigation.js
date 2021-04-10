@@ -1,8 +1,7 @@
 import React from "react";
-import "../css/Navigation.css";
-import "../css/Header.css";
 import RoomIcon from '@material-ui/icons/Room';
 import { Link } from "react-router-dom";
+import "../css/Navigation.css";
 
 function Navigation() {
     return (

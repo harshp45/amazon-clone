@@ -47,7 +47,7 @@ function Register() {
                 <div>
                     <hr/>
                 </div>
-            <span>Already have an account? Sign In</span>
+            <span>Already have an account? <Link to="/login">Sign In</Link></span>
             </div>
         </div>
     )
