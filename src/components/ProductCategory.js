@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Product from "./Product";
 import "../css/ProductCategory.css";
 import { useLocation, Link} from "react-router-dom";
+import axios from "axios";
 
 function ProductCategory() {
 
@@ -11,19 +12,23 @@ let location = useLocation();
 
 
   useEffect(() => {
-        fetch('https://amazon-fakedb.herokuapp.com/products',{
-        headers: {'Content-Type': 'application/json'}
-        })
-        .then(response =>  response.json())
-        .then(data => setProducts(data))
-        
-    }, []);
+    axios.post('http://localhost:5000/category',{
+      "category":location.state.test
+    })
+    .then((response) => 
+    {
+      setProducts(response.data.body);
+    }, (error) => 
+    {
+      console.log(error);
+    });
+}, []);
 
 
   return (
     <div className="pc-row">
         <div className="container">
-        {products.filter(item => item.category===location.state.test).map(item => (
+        {products.map(item => (
                 <div className="pc-row"> 
                 <Link to={{pathname:'/productdesc', state:{test: item.id}}}>
                     <Product

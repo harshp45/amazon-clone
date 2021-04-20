@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Product from "./Product";
 import "../css/AllProducts.css";
+import axios from "axios";
 
 function AllProducts() {
 
@@ -10,13 +11,15 @@ const [products, setProducts] = useState([]);
 
 
   useEffect(() => {
-        fetch('https://amazon-fakedb.herokuapp.com/products',{
-        headers: {'Content-Type': 'application/json'}
-        })
-        .then(response =>  response.json())
-        .then(data => setProducts(data))
-        
-    }, []);
+    axios.get('http://localhost:5000/products')
+    .then((response) => 
+    {
+      setProducts(response.data.body);
+    }, (error) => 
+    {
+      console.log(error);
+    });
+}, []);
 
 
   return (

@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import "../css/ProductDesc.css"
 import { useLocation} from "react-router-dom";
+import axios from "axios";
 
 function ProductDesc(props) {
 
@@ -9,25 +10,28 @@ function ProductDesc(props) {
     let location = useLocation();
 
     useEffect(() => {
-        const url = `https://amazon-fakedb.herokuapp.com/products/${location.state.test}`
-        // console.log(location.state.test);
-        fetch(url,{
-        headers: {'Content-Type': 'application/json'}
-        })
-        .then(response =>  response.json())
-        .then(data => setProducts(data))
+        const url = `http://localhost:5000/products/${location.state.test}`
+        axios.get(url)
+        .then((response) => 
+        {
+          setProducts(response.data.body[0]);
+        }, (error) => 
+        {
+          console.log(error);
+        });
         
      }, []);
 
-    
 
+    
+  const imgSource=`/products/${products.image}`;
     
 
 
   return (
       <div className="pd-main-div">
       <div className="setimg">
-                 <img src={products.image} alt="" />
+                 <img src={imgSource} alt="" />
                  </div>
         
         <div className="pd-content">

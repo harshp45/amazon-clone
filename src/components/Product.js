@@ -3,6 +3,8 @@ import "../css/Product.css";
 
 function Product({ id, title, image, price, popularity, rating }) {
 
+  const imgSource=`/products/${image}`;
+
   return (
     <div className="p-main-div">
 
@@ -25,7 +27,7 @@ function Product({ id, title, image, price, popularity, rating }) {
           </div>
       </div>
 
-      <img src={image} alt="" />
+      <img src={imgSource} alt="" />
     </div>
   );
 }
