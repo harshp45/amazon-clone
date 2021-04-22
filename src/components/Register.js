@@ -7,6 +7,7 @@ import axios from "axios";
 
 function Register() {
 
+    const imgSource=`/Logo/amazonLogo_login.png`;
     const { register, formState: { errors }, handleSubmit } = useForm();
     const [user, setUser] = useState([]);
     const [submitted, setSubmitted] = useState(false);
@@ -41,7 +42,7 @@ function Register() {
             <Link to='/'>
                 <img
                     className="r-amazon-logo"
-                    src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png' 
+                    src={imgSource}
                 />
             </Link>
 

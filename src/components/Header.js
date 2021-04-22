@@ -10,10 +10,13 @@ import CartIcon from '@material-ui/icons/ShoppingCart';
 import { Link } from "react-router-dom";
 
 function Header() {
+
+  const imgSource=`/Logo/amazonLogo_header.png`;
+
     return (
       <div className="h-main-div">
         <Link to="/">
-          <img className="amazon-logo" src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" />
+          <img className="amazon-logo" src={imgSource} />
         </Link>
   
         <div className="h-search-div">

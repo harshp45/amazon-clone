@@ -14,6 +14,11 @@ import image4 from "../images/image4.jpg";
 function Main() 
 {
 
+  const booksImg=`/products/Priyanka.jpg`;
+  const electronicsImg = `/products/Philips_Trimmer.jpg`;
+  const medicineImg = `/products/Multivitamin.jpg`;
+  const cameraImg = `/products/NikonD7500.jpg`;
+
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -56,23 +61,23 @@ function Main()
               <Link to={{pathname:"productCategory", state:{test: 'Bookshelf and Readings'}}}>
               <Category
                 title="Bookshelf and Readings"
-                image="https://images-na.ssl-images-amazon.com/images/I/81W1swVa19L.jpg"/>
+                image={booksImg}/>
               </Link>
               <Link to={{pathname:"productCategory", state:{test: 'Camera and Lens'}}}>
               <Category
                 title="Camera and Lens"
-                image="https://images-na.ssl-images-amazon.com/images/I/81kzldM7%2BJL._AC_SL1500_.jpg"/>
+                image={cameraImg}/>
               </Link>
 
               <Link to={{pathname:"productCategory", state:{test: 'Medicine and Drugs'}}}>
               <Category
                 title="Medicine and Drugs"
-                image="https://images-na.ssl-images-amazon.com/images/I/613Myh8hxaL._AC_SY450_.jpg"/>
+                image={medicineImg}/>
               </Link>
               <Link to={{pathname:"productCategory", state:{test: 'Electronics'}}}>
               <Category
                 title="Electronics"
-                image="https://images-na.ssl-images-amazon.com/images/I/81xurOYks0L._AC_SX425_.jpg"/>
+                image={electronicsImg}/>
               </Link>
         </div>
       </div>
