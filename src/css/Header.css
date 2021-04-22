@@ -23,10 +23,15 @@
     flex: 1;
     
   }
+
+  .h-search-div > button {
+    background-color: #cd9042;
+    
+  }
   
   .h-search-bar {
     width: 100%;
-    height: 34px;
+    height: 37.1px;
     border: none;
     padding: 10px;
   }
