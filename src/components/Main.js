@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-// import { Carousel } from 'react-responsive-carousel';
 import "../css/Main.css";
 import Category from "./Category";
 import { Link } from "react-router-dom";
@@ -19,16 +17,6 @@ function Main()
   const medicineImg = `/products/Multivitamin.jpg`;
   const cameraImg = `/products/NikonD7500.jpg`;
 
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-
-    fetch('https://amazon-fakedb.herokuapp.com/products',{
-      headers: {'Content-Type': 'application/json'}
-    })
-    .then(response =>  response.json())
-    .then(data => setProducts(data))
-    }, []);
 
   return (
     <div className="main-div">
